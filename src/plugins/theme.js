@@ -3,8 +3,10 @@ const extendTheme = {
   colors: {
     white: '#F5F5F5',
     blue: '#10A2F6',
-    grey_light: '#414242',
-    black: '#131414'
+    blue_light: '#1CC8EE',
+    gray_light: '#414242',
+    black: '#131414',
+    gray: '#1C1D1D'
   },
   spacing: {
     '1px': '1px',

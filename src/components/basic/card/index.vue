@@ -1,7 +1,7 @@
 <template lang="pug">
 .container(
   :class="tw(\
-    'mx-auto', 'bg-white',\
+    'mx-auto',\
     TYPE_STYLE,\
   )"
 )
@@ -19,11 +19,8 @@ export default {
   },
   setup (props) {
     const typeStyle = {
-      lv1: apply`p-10px`,
-      lv2: css({
-        padding: '5.5px 7.07px 5.5px 6.28px'
-      }),
-      lv3: apply`p-3`
+      lv1: apply`bg-gray`,
+      lv2: apply`bg-black`
     }
 
     const TYPE_STYLE = computed(() => css(typeStyle[props.type]))
