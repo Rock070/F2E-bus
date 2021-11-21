@@ -29,24 +29,24 @@ export default {
   props: {
     inputValue: {
       type: String,
-      default: ''
+      default: '',
     },
     placeholder: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   emits: ['update:inputValue'],
   setup () {
     const INPUT_STYLE = css({
       '&::placeholder': {
-        color: theme('colors.gray_light')
-      }
+        color: theme('colors.gray_light'),
+      },
     })
     return {
       css,
-      INPUT_STYLE
+      INPUT_STYLE,
     }
-  }
+  },
 }
 </script>

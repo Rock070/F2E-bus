@@ -9,15 +9,14 @@ import TourismService from '@/services/TourismService'
 import { ALL_CITY } from '@/configs/site'
 export default {
   setup () {
-    
-    TourismService.getCitySpot({
-      body: {
-        city: 'Taipei'
-      }
-    })
+    // TourismService.getCitySpot({
+    //   body: {
+    //     city: 'Taipei',
+    //   },
+    // })
     // const {PictureUrl1, PictureDescription1} = res.Picture
     // Picture.PictureUrl1 ,PictureDescription1
-      .then(res => console.log(res))
+    // .then(res => console.log(res))
     // TourismService.getAllSpot({
     //   body: {
     //     $top: 30
@@ -30,8 +29,8 @@ export default {
     // console.log(ALL_CITY)
 
     return {
-      ALL_CITY
+      ALL_CITY,
     }
-  }
+  },
 }
 </script>

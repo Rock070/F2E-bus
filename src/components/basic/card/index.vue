@@ -14,20 +14,20 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'lv1'
-    }
+      default: 'lv1',
+    },
   },
   setup (props) {
     const typeStyle = {
       lv1: apply`bg-gray`,
-      lv2: apply`bg-black`
+      lv2: apply`bg-black`,
     }
 
     const TYPE_STYLE = computed(() => css(typeStyle[props.type]))
 
     return {
-      TYPE_STYLE
+      TYPE_STYLE,
     }
-  }
+  },
 }
 </script>

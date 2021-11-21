@@ -5,6 +5,7 @@ TwContainer(
     'min-h-screen',\
     'pt-18px',\
     'text-white',\
+    'relative',\
   )"
 )
   div(:class="tw('flex')")
@@ -17,13 +18,14 @@ TwContainer(
       v-model:inputValue="submitData.search"
     )
   TwCard(
-    type="lv2"
-    :class="tw('p-5')"
+    :class="tw(\
+      'fixed bottom-0',\
+      'p-5',\
+      'w-full',\
+    )"
   )
-    TwTab(
-      :class="tw('')"
-    )
-    div 123
+    TwTab(:class="tw('')")
+      div 紅
 </template>
 
 <script>
@@ -35,14 +37,14 @@ import { reactive } from 'vue'
 export default {
   setup () {
     const submitData = reactive({
-      search: ''
+      search: '',
     })
 
     return {
       submitData,
       css,
-      ALL_CITYS
+      ALL_CITYS,
     }
-  }
+  },
 }
 </script>

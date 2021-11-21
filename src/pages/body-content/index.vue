@@ -3,7 +3,8 @@ div(
   :class="tw(\
     'bg-white',\
     'min-h-screen',\
-    'min-w-screen',\
+    'w-full',\
+    'box-border'\
   )"
 )
   router-view
@@ -14,6 +15,6 @@ div(
 export default {
   name: 'Home',
   components: {
-  }
+  },
 }
 </script>

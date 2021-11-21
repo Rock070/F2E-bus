@@ -6,7 +6,7 @@ const extendTheme = {
     blue_light: '#1CC8EE',
     gray_light: '#414242',
     black: '#131414',
-    gray: '#1C1D1D'
+    gray: '#1C1D1D',
   },
   spacing: {
     '1px': '1px',
@@ -22,6 +22,7 @@ const extendTheme = {
     '18px': '18px',
     '30px': '30px',
     '32px': '32px',
+    '54px': '54px',
     // 4px
     1: '0.25rem',
     // 8px
@@ -50,7 +51,7 @@ const extendTheme = {
     16: '4rem',
     // 72px
     18: '4.5rem',
-    '50%': '50%'
+    '50%': '50%',
   },
   animation: {
     spinner: 'spin .75s ease infinite',
@@ -58,7 +59,7 @@ const extendTheme = {
     fadeIn: 'fadeIn .15s linear',
     progressBar: 'progressBar 1s linear',
     fadeInUp: 'fadeInUp .35s cubic-bezier(0, 0, 0.2, 1)',
-    marquee: 'marquee 32s linear infinite'
+    marquee: 'marquee 32s linear infinite',
   },
   opacity: {
     // 0.32 * 0.48
@@ -71,12 +72,12 @@ const extendTheme = {
     40: '0.40',
     48: '0.48',
     50: '0.5',
-    80: '0.8'
+    80: '0.8',
   },
   borderOpacity: {
     20: '0.2',
     32: '0.32',
-    50: '0.5'
+    50: '0.5',
   },
   borderRadius: {
     2: '2px',
@@ -85,14 +86,14 @@ const extendTheme = {
     10: '10px',
     16: '16px',
     24: '24px',
-    50: '50%'
+    50: '50%',
   },
   borderWidth: {
-    2: '2px'
+    2: '2px',
   },
   fontFamily: {
     Mula: 'Mula',
-    base: 'Arial, Noto Sans SC, "Noto Sans SC" ,"PingFang SC", "Microsoft Yahei", Microsoft Yahei, 微軟雅黑體, "微軟雅黑體", MicrosoftYahei, MicrosoftYaHei, 微軟正黑體, "微軟正黑體", Microsoft JhengHei, "Microsoft JhengHei", "黑體-繁", 黑體-繁, "Heiti TC", Heiti TC, sans-serif'
+    base: 'Arial, Noto Sans SC, "Noto Sans SC" ,"PingFang SC", "Microsoft Yahei", Microsoft Yahei, 微軟雅黑體, "微軟雅黑體", MicrosoftYahei, MicrosoftYaHei, 微軟正黑體, "微軟正黑體", Microsoft JhengHei, "Microsoft JhengHei", "黑體-繁", 黑體-繁, "Heiti TC", Heiti TC, sans-serif',
   },
   fontSize: {
     // 12px
@@ -108,43 +109,43 @@ const extendTheme = {
     // 32px
     ml: ['2rem', { lineHeight: '3rem' }],
     // 36px
-    H2: ['2.25rem', { lineHeight: '3rem' }]
+    H2: ['2.25rem', { lineHeight: '3rem' }],
   },
   keyframes: {
     spin: {
       from: {
-        transform: 'rotate(0deg)'
+        transform: 'rotate(0deg)',
       },
       to: {
-        transform: 'rotate(360deg)'
-      }
-    }
+        transform: 'rotate(360deg)',
+      },
+    },
   },
   lineHeight: {
     '20px': '20px',
     '24px': '24px',
-    '32px': '32px'
+    '32px': '32px',
   },
   width: {
     '9px': '9px',
-    40: '10rem'
+    40: '10rem',
   },
   minHeight: {
     24: '24px',
     32: '32px',
     48: '48px',
-    56: '56px'
+    56: '56px',
   },
   minWidth: {
-    base: '1203px'
+    base: '1203px',
   },
   rotate: {
     180: '180deg',
-    '-90': '-90deg'
+    '-90': '-90deg',
   },
   transitionDuration: {
     350: '350ms',
-    500: '500ms'
+    500: '500ms',
   },
   zIndex: {
     1: '1',
@@ -157,11 +158,11 @@ const extendTheme = {
     // popup
     popup: '5',
     5: '5',
-    6: '6'
+    6: '6',
   },
   translate: {
-    '50%': '50%'
-  }
+    '50%': '50%',
+  },
 }
 
 const customTheme = {
@@ -170,19 +171,19 @@ const customTheme = {
     ...extendTheme.colors,
     transparent: 'transparent',
     'pure-black': '#000',
-    'pure-white': '#fff'
+    'pure-white': '#fff',
   },
   spacing: {
     ...extendTheme.spacing,
-    0: '0px'
+    0: '0px',
   },
   animation: {
     ...extendTheme.animation,
-    none: 'none'
+    none: 'none',
   },
   backgroundColor: (theme) => theme('colors'),
   backgroundImage: {
-    none: 'none'
+    none: 'none',
   },
   backgroundOpacity: (theme) => theme('opacity'),
   backgroundPosition: {
@@ -193,39 +194,39 @@ const customTheme = {
     right: 'right',
     'right-bottom': 'right bottom',
     'right-top': 'right top',
-    top: 'top'
+    top: 'top',
   },
   backgroundSize: {
     auto: 'auto',
     cover: 'cover',
-    contain: 'contain'
+    contain: 'contain',
   },
   borderColor: (theme) => ({
     ...theme('colors'),
-    DEFAULT: theme('colors.pure-black', 'currentColor')
+    DEFAULT: theme('colors.pure-black', 'currentColor'),
   }),
   borderOpacity: {
-    ...extendTheme.borderOpacity
+    ...extendTheme.borderOpacity,
   },
   borderRadius: {
     ...extendTheme.borderRadius,
     none: '0',
-    full: '9999px'
+    full: '9999px',
   },
   borderWidth: {
     ...extendTheme.borderWidth,
     DEFAULT: '1px',
-    0: '0px'
+    0: '0px',
   },
   boxShadow: {
-    none: 'none'
+    none: 'none',
   },
   container: {},
   cursor: {
     auto: 'auto',
     default: 'default',
     pointer: 'pointer',
-    'not-allowed': 'not-allowed'
+    'not-allowed': 'not-allowed',
   },
   divideColor: {},
   divideOpacity: {},
@@ -235,27 +236,27 @@ const customTheme = {
     1: '1 1 0%',
     auto: '1 1 auto',
     initial: '0 1 auto',
-    none: 'none'
+    none: 'none',
   },
   flexGrow: {
     0: '0',
-    DEFAULT: '1'
+    DEFAULT: '1',
   },
   flexShrink: {
     0: '0',
-    DEFAULT: '1'
+    DEFAULT: '1',
   },
   fontFamily: {
-    ...extendTheme.fontFamily
+    ...extendTheme.fontFamily,
   },
   fontSize: {
-    ...extendTheme.fontSize
+    ...extendTheme.fontSize,
   },
   fontWeight: {
     normal: 'normal',
     500: 500,
     bold: 700,
-    extrabold: 900
+    extrabold: 900,
   },
   gap: (theme) => theme('spacing'),
   gradientColorStops: (theme) => theme('colors'),
@@ -276,45 +277,47 @@ const customTheme = {
     ...theme('spacing'),
     full: '100%',
     screen: '100vh',
-    header: '72px'
+    header: '72px',
   }),
   inset: (theme) => ({
     auto: 'auto',
-    ...theme('spacing')
+    ...theme('spacing'),
   }),
   keyframes: {
-    ...extendTheme.keyframes
+    ...extendTheme.keyframes,
   },
   letterSpacing: {},
   lineHeight: {
     ...extendTheme.lineHeight,
     none: '1',
-    normal: '1.5'
+    normal: '1.5',
   },
   listStyleType: {
-    none: 'none'
+    none: 'none',
   },
   margin: (theme, { negative }) => ({
     auto: 'auto',
     ...theme('spacing'),
-    ...negative(theme('spacing'))
+    ...negative(theme('spacing')),
   }),
   maxHeight: (theme) => ({
     ...theme('spacing'),
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   }),
   maxWidth: {},
   minHeight: {
+    ...extendTheme.spacing,
     ...extendTheme.minHeight,
     0: '0px',
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   },
   minWidth: {
+    ...extendTheme.spacing,
     ...extendTheme.minWidth,
     0: '0px',
-    full: '100%'
+    full: '100%',
   },
   objectPosition: {
     bottom: 'bottom',
@@ -325,16 +328,16 @@ const customTheme = {
     right: 'right',
     'right-bottom': 'right bottom',
     'right-top': 'right top',
-    top: 'top'
+    top: 'top',
   },
   opacity: {
     ...extendTheme.opacity,
     0: '0',
-    1: '1'
+    1: '1',
   },
   order: {},
   outline: {
-    none: ['2px solid transparent', '2px']
+    none: ['2px solid transparent', '2px'],
   },
   padding: (theme) => theme('spacing'),
   placeholderColor: (theme) => theme('colors'),
@@ -345,13 +348,13 @@ const customTheme = {
   ringOpacity: {},
   ringWidth: {},
   rotate: {
-    ...extendTheme.rotate
+    ...extendTheme.rotate,
   },
   scale: {},
   skew: {},
   space: (theme, { negative }) => ({
     ...theme('spacing'),
-    ...negative(theme('spacing'))
+    ...negative(theme('spacing')),
   }),
   stroke: {},
   strokeWidth: {},
@@ -359,29 +362,29 @@ const customTheme = {
   textOpacity: (theme) => theme('opacity'),
   transitionDuration: {
     ...extendTheme.transitionDuration,
-    DEFAULT: '150ms'
+    DEFAULT: '150ms',
   },
   transitionDelay: {
-    150: '150ms'
+    150: '150ms',
   },
   transitionProperty: {},
   transitionTimingFunction: {},
   translate: {
-    ...extendTheme.translate
+    ...extendTheme.translate,
   },
   width: (theme) => ({
     ...extendTheme.width,
     ...theme('spacing'),
     auto: 'auto',
     full: '100%',
-    screen: '100vw'
+    screen: '100vw',
   }),
   zIndex: {
     ...extendTheme.zIndex,
     '-1': '-1',
     auto: 'auto',
-    0: '0'
-  }
+    0: '0',
+  },
 }
 
 module.exports = customTheme
